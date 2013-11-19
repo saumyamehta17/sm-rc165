@@ -40,3 +40,19 @@ In Application.html.erb layout
 rails s
 ```
 
+Railscast 166
+=============
+Gem file
+```
+gem 'metric_fu'
+````
+On Terminal
+```
+run
+rake metrics:all
+```
+Check any code metric tool
+for ex -
+
+rails_best_practices
+```

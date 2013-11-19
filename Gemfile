@@ -24,6 +24,7 @@ gem 'jquery-rails'
 gem 'quiet_assets'
 gem 'thin'
 gem 'simple_form'
+gem 'metric_fu'
 
 
 # To use ActiveModel has_secure_password
