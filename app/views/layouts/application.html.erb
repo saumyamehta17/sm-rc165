@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmRc165</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="flash">
+	    <% flash.each do |name,msg| %>
+		    <div class="alert alert-<%= name == :notice ? 'success' : 'error' %>" >
+		      <strong><%= msg %></strong>
+		    </div>
+	    <% end %>
+    </div>
+    <%= yield %>
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+  setTimeout(function(){
+    $('#flash').remove();
+  }, 5000);
+ })
+</script>
